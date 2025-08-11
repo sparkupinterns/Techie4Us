@@ -1,0 +1,198 @@
+.portfolio .Work {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-flex-line-pack: start;
+  align-content: start;
+  place-items: stretch stretch;
+}
+@media (max-width: 1400px) {
+  .portfolio .Work {
+    grid-gap: 18px;
+  }
+}
+@media (max-width: 1200px) {
+  .portfolio .Work {
+    grid-gap: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .portfolio .Work {
+    grid-gap: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio .Work {
+    grid-gap: 9px;
+  }
+}
+@media (max-width: 575px) {
+  .portfolio .Work {
+    grid-gap: 6px;
+  }
+}
+.portfolio .Work a {
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .portfolio .Work a {
+    border-radius: 5px;
+  }
+}
+.portfolio .Work a:after {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: rgb(var(--black-rgb) / 0.7);
+  content: attr(data-text) " "
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="9" x2="15" y2="1"/><polyline points="10 1 15 1 15 6"/><polyline points="13 8 13 15 1 15 1 3 8 3"/></svg>') !important;
+  color: var(--white);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.portfolio .Work a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.portfolio .Work a span {
+  height: 35%;
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  font-size: 16px;
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(var(--black-rgb) / 0.88);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: var(--white);
+  white-space: nowrap;
+  font-weight: 300;
+}
+.portfolio .Work a:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.portfolio .Work a:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.portfolio .Work a:hover span {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+.portfolio .Work *:nth-child(1) {
+  grid-area: 1/1/3/4;
+}
+.portfolio .Work *:nth-child(2) {
+  grid-area: 3/1/5/4;
+}
+.portfolio .Work *:nth-child(3) {
+  grid-area: 1/4/5/8;
+}
+.portfolio .Work *:nth-child(3):after {
+  font-size: 26px;
+  content: attr(data-text) " "
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="26" height="26" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="9" x2="15" y2="1"/><polyline points="10 1 15 1 15 6"/><polyline points="13 8 13 15 1 15 1 3 8 3"/></svg>') !important;
+}
+.portfolio .Work *:nth-child(4) {
+  grid-area: 1/8/3/11;
+}
+.portfolio .Work *:nth-child(5) {
+  grid-area: 3/8/5/11;
+}
+@media (max-width: 767px) {
+  .portfolio .Work *:nth-child(1) {
+    grid-area: 1/1/2/5;
+  }
+  .portfolio .Work *:nth-child(2) {
+    grid-area: 2/1/3/5;
+  }
+  .portfolio .Work *:nth-child(3) {
+    grid-area: 1/5/3/11;
+  }
+  .portfolio .Work *:nth-child(4) {
+    grid-area: 3/1/5/7;
+  }
+  .portfolio .Work *:nth-child(5) {
+    grid-area: 3/7/5/11;
+  }
+}
+@media (max-width: 420px) {
+  .portfolio .Work {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.portfolio .Work {
+  grid-gap: 20px;
+}
+@media (max-width: 1400px) {
+  .portfolio .Work {
+    grid-gap: 18px;
+  }
+}
+@media (max-width: 1200px) {
+  .portfolio .Work {
+    grid-gap: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .portfolio .Work {
+    grid-gap: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio .Work {
+    grid-gap: 9px;
+  }
+}
+@media (max-width: 575px) {
+  .portfolio .Work {
+    grid-gap: 6px;
+  }
+} /*# sourceMappingURL=portfolio-in.min.css.map */

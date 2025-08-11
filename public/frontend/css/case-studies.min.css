@@ -1,0 +1,144 @@
+.SecCaseStudies .card {
+  border-radius: 15px;
+  background: none;
+  gap: 8px;
+  padding: 5px;
+}
+.SecCaseStudies .card img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.SecCaseStudies .card > * {
+  padding: 0;
+  border: none;
+  background: none;
+}
+.SecCaseStudies .card-body {
+  padding: 0 12px;
+}
+@media (max-width: 992px) {
+  .SecCaseStudies .card-body .h4 {
+    display: -webkit-box !important;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
+.SecCaseStudies .card:hover img {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+.SecCaseStudies .card:hover h3 {
+  color: var(--thm) !important;
+}
+.SecCaseStudies .Tech > span {
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(var(--black-rgb) / 0.3);
+  font-size: 15px;
+  color: var(--black);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media (max-width: 450px) {
+  .SecCaseStudies .Tech > span {
+    padding: 4px 15px;
+  }
+}
+.SecCaseStudies .Tech > span:hover {
+  background: rgb(var(--black-rgb) / 0.1);
+}
+.CaseStudies .Tech > span {
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(var(--black-rgb) / 0.3);
+  font-size: 15px;
+  color: var(--black);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media (max-width: 450px) {
+  .CaseStudies .Tech > span {
+    padding: 4px 15px;
+  }
+}
+.CaseStudies .Tech > span:hover {
+  background: rgb(var(--black-rgb) / 0.1);
+}
+.CaseStudies ul.CaseSer {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.CaseStudies ul.CaseSer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  line-height: 120%;
+  color: var(--black);
+  width: calc(50% - 8px);
+  padding: 0;
+  align-items: flex-start;
+}
+.CaseStudies ul.CaseSer li:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -2px;
+  height: 24px;
+  min-width: 24px;
+  -webkit-box-shadow: 0 0 9px rgb(var(--black-rgb) / 0.3);
+  box-shadow: 0 0 9px rgb(var(--black-rgb) / 0.3);
+  border-radius: 50%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="%23a40000" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="9" fill="white" opacity=".8"/><circle cx="9" cy="9" r="7"/><polyline stroke="white" points="5 9 7 12 13 6"/></svg>');
+}
+@media (max-width: 575px) {
+  .CaseStudies ul.CaseSer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .CaseStudies ul.CaseSer li {
+    width: 100%;
+  }
+}
+.CaseStudies.Main .items {
+  background: rgb(var(--thm-rgb) / 0.1);
+}
+.CaseStudies.Main .items:nth-child(odd) {
+  background: rgb(var(--thm1-rgb) / 0.1);
+}
+.CaseStudies .LetsTalk {
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+}
+.CaseStudies .LetsTalk li {
+  margin-bottom: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  counter-increment: num;
+}
+.CaseStudies .LetsTalk li h3 {
+  font-size: 20px;
+}
+.CaseStudies .LetsTalk li:before {
+  content: counter(num) ".";
+  font-size: 48px;
+  line-height: 48px;
+  min-width: 48px;
+  font-weight: 600;
+  color: rgb(var(--black-rgb) / 0.7);
+} /*# sourceMappingURL=case-studies.min.css.map */

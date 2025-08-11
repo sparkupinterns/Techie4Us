@@ -1,0 +1,4368 @@
+@-webkit-keyframes sticky-header {
+  to {
+    height: 0vh;
+    font-size: 0.2em;
+  }
+}
+@keyframes sticky-header {
+  to {
+    height: 0vh;
+    font-size: 0.2em;
+  }
+}
+.Slider {
+  background: var(--black);
+  min-height: 550px;
+  height: calc(100dvh - 60px);
+  padding: 20px 0 40px;
+}
+@media (max-width: 1400px) {
+  .Slider {
+    max-height: 720px;
+  }
+}
+@media (max-width: 767px) {
+  .Slider {
+    height: calc(100dvh - 110px);
+  }
+}
+.Slider * {
+  color: var(--white);
+}
+.Slider video,
+.Slider .bgimg {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  z-index: 0;
+}
+.Slider > div {
+  z-index: 2;
+  position: relative;
+}
+.Slider > div .BhartIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 17px;
+}
+.Slider > div .BhartIn strong {
+  font-weight: 600;
+}
+.Slider > div .BhartMap img {
+  height: 40px;
+  width: 53px;
+  -webkit-mask: url("../img/india.svg") no-repeat 14px / contain;
+  mask: url("../img/india.svg") no-repeat 14px / contain;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.Slider > div *.TypeText {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  pointer-events: none;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1 !important;
+}
+.Slider > div *.TypeText::before {
+  content: "​";
+  content: "​"/"We Grow Businesses";
+  alt: "We Grow Businesses";
+  white-space: break-spaces;
+  will-change: content;
+  -webkit-animation: typed-0 30.9s linear 1s infinite forwards;
+  animation: typed-0 30.9s linear 1s infinite forwards;
+}
+.Slider > div *.TypeText::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 2px;
+  border-right: 2px solid currentColor;
+  white-space: nowrap;
+  -webkit-animation: typed-0-caret 0.75s linear 1s infinite forwards;
+  animation: typed-0-caret 0.75s linear 1s infinite forwards;
+}
+@-webkit-keyframes typed-0 {
+  0%,
+  0.3226245955% {
+    content: "​W";
+    content: "​W"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  0.3236245955%,
+  0.6462491909% {
+    content: "​We";
+    content: "​We"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  0.6472491909%,
+  0.9698737864% {
+    content: "​We ";
+    content: "​We "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  0.9708737864%,
+  1.2934983819% {
+    content: "​We G";
+    content: "​We G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  1.2944983819%,
+  1.6171229773% {
+    content: "​We Gr";
+    content: "​We Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  1.6181229773%,
+  1.9407475728% {
+    content: "​We Gro";
+    content: "​We Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  1.9417475728%,
+  2.2643721683% {
+    content: "​We Grow";
+    content: "​We Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  2.2653721683%,
+  2.5879967638% {
+    content: "​We Grow ";
+    content: "​We Grow "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  2.5889967638%,
+  2.9116213592% {
+    content: "​We Grow B";
+    content: "​We Grow B"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  2.9126213592%,
+  3.2352459547% {
+    content: "​We Grow Bu";
+    content: "​We Grow Bu"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  3.2362459547%,
+  3.5588705502% {
+    content: "​We Grow Bus";
+    content: "​We Grow Bus"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  3.5598705502%,
+  3.8824951456% {
+    content: "​We Grow Busi";
+    content: "​We Grow Busi"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  3.8834951456%,
+  4.2061197411% {
+    content: "​We Grow Busin";
+    content: "​We Grow Busin"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  4.2071197411%,
+  4.5297443366% {
+    content: "​We Grow Busine";
+    content: "​We Grow Busine"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  4.5307443366%,
+  4.853368932% {
+    content: "​We Grow Busines";
+    content: "​We Grow Busines"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  4.854368932%,
+  5.1769935275% {
+    content: "​We Grow Business";
+    content: "​We Grow Business"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  5.1779935275%,
+  5.500618123% {
+    content: "​We Grow Businesse";
+    content: "​We Grow Businesse"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  5.501618123%,
+  12.5556343042% {
+    content: "​We Grow Businesses";
+    content: "​We Grow Businesses"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  12.5566343042%,
+  12.8145339806% {
+    content: "​We Grow Businesse";
+    content: "​We Grow Businesse"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  12.8155339806%,
+  13.073433657% {
+    content: "​We Grow Business";
+    content: "​We Grow Business"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  13.074433657%,
+  13.3323333333% {
+    content: "​We Grow Busines";
+    content: "​We Grow Busines"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  13.3333333333%,
+  13.5912330097% {
+    content: "​We Grow Busine";
+    content: "​We Grow Busine"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  13.5922330097%,
+  13.8501326861% {
+    content: "​We Grow Busin";
+    content: "​We Grow Busin"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  13.8511326861%,
+  14.1090323625% {
+    content: "​We Grow Busi";
+    content: "​We Grow Busi"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  14.1100323625%,
+  14.3679320388% {
+    content: "​We Grow Bus";
+    content: "​We Grow Bus"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  14.3689320388%,
+  14.6268317152% {
+    content: "​We Grow Bu";
+    content: "​We Grow Bu"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  14.6278317152%,
+  14.8857313916% {
+    content: "​We Grow B";
+    content: "​We Grow B"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  14.8867313916%,
+  15.144631068% {
+    content: "​We Grow ";
+    content: "​We Grow "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  15.145631068%,
+  15.4035307443% {
+    content: "​We Grow";
+    content: "​We Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  15.4045307443%,
+  15.6624304207% {
+    content: "​We Gro";
+    content: "​We Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  15.6634304207%,
+  15.9213300971% {
+    content: "​We Gr";
+    content: "​We Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  15.9223300971%,
+  16.1802297735% {
+    content: "​We G";
+    content: "​We G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  16.1812297735%,
+  16.4391294498% {
+    content: "​We ";
+    content: "​We "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  16.4401294498%,
+  16.6980291262% {
+    content: "​We";
+    content: "​We"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  16.6990291262%,
+  16.9569288026% {
+    content: "​W";
+    content: "​W"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  16.9579288026%,
+  20.1931747573% {
+    content: "​";
+    content: "​"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  20.1941747573%,
+  20.5167993528% {
+    content: "​Y";
+    content: "​Y"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  20.5177993528%,
+  20.8404239482% {
+    content: "​Yo";
+    content: "​Yo"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  20.8414239482%,
+  21.1640485437% {
+    content: "​You";
+    content: "​You"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  21.1650485437%,
+  21.4876731392% {
+    content: "​Your";
+    content: "​Your"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  21.4886731392%,
+  21.8112977346% {
+    content: "​Your ";
+    content: "​Your "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  21.8122977346%,
+  22.1349223301% {
+    content: "​Your G";
+    content: "​Your G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  22.1359223301%,
+  22.4585469256% {
+    content: "​Your Gr";
+    content: "​Your Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  22.4595469256%,
+  22.782171521% {
+    content: "​Your Gro";
+    content: "​Your Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  22.783171521%,
+  23.1057961165% {
+    content: "​Your Grow";
+    content: "​Your Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  23.1067961165%,
+  23.429420712% {
+    content: "​Your Growt";
+    content: "​Your Growt"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  23.430420712%,
+  23.7530453074% {
+    content: "​Your Growth";
+    content: "​Your Growth"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  23.7540453074%,
+  24.0766699029% {
+    content: "​Your Growth,";
+    content: "​Your Growth,"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  24.0776699029%,
+  24.4002944984% {
+    content: "​Your Growth, ";
+    content: "​Your Growth, "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  24.4012944984%,
+  24.7239190939% {
+    content: "​Your Growth, O";
+    content: "​Your Growth, O"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  24.7249190939%,
+  25.0475436893% {
+    content: "​Your Growth, Ou";
+    content: "​Your Growth, Ou"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  25.0485436893%,
+  25.3711682848% {
+    content: "​Your Growth, Our";
+    content: "​Your Growth, Our"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  25.3721682848%,
+  25.6947928803% {
+    content: "​Your Growth, Our ";
+    content: "​Your Growth, Our "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  25.6957928803%,
+  26.0184174757% {
+    content: "​Your Growth, Our P";
+    content: "​Your Growth, Our P"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  26.0194174757%,
+  26.3420420712% {
+    content: "​Your Growth, Our Pr";
+    content: "​Your Growth, Our Pr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  26.3430420712%,
+  26.6656666667% {
+    content: "​Your Growth, Our Pri";
+    content: "​Your Growth, Our Pri"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  26.6666666667%,
+  26.9892912621% {
+    content: "​Your Growth, Our Prio";
+    content: "​Your Growth, Our Prio"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  26.9902912621%,
+  27.3129158576% {
+    content: "​Your Growth, Our Prior";
+    content: "​Your Growth, Our Prior"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  27.3139158576%,
+  27.6365404531% {
+    content: "​Your Growth, Our Priori";
+    content: "​Your Growth, Our Priori"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  27.6375404531%,
+  27.9601650485% {
+    content: "​Your Growth, Our Priorit";
+    content: "​Your Growth, Our Priorit"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  27.9611650485%,
+  28.283789644% {
+    content: "​Your Growth, Our Priority";
+    content: "​Your Growth, Our Priority"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  28.284789644%,
+  35.3388058252% {
+    content: "​Your Growth, Our Priority.";
+    content: "​Your Growth, Our Priority."/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  35.3398058252%,
+  35.5977055016% {
+    content: "​Your Growth, Our Priority";
+    content: "​Your Growth, Our Priority"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  35.5987055016%,
+  35.856605178% {
+    content: "​Your Growth, Our Priorit";
+    content: "​Your Growth, Our Priorit"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  35.857605178%,
+  36.1155048544% {
+    content: "​Your Growth, Our Priori";
+    content: "​Your Growth, Our Priori"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  36.1165048544%,
+  36.3744045307% {
+    content: "​Your Growth, Our Prior";
+    content: "​Your Growth, Our Prior"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  36.3754045307%,
+  36.6333042071% {
+    content: "​Your Growth, Our Prio";
+    content: "​Your Growth, Our Prio"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  36.6343042071%,
+  36.8922038835% {
+    content: "​Your Growth, Our Pri";
+    content: "​Your Growth, Our Pri"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  36.8932038835%,
+  37.1511035599% {
+    content: "​Your Growth, Our Pr";
+    content: "​Your Growth, Our Pr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  37.1521035599%,
+  37.4100032362% {
+    content: "​Your Growth, Our P";
+    content: "​Your Growth, Our P"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  37.4110032362%,
+  37.6689029126% {
+    content: "​Your Growth, Our ";
+    content: "​Your Growth, Our "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  37.6699029126%,
+  37.927802589% {
+    content: "​Your Growth, Our";
+    content: "​Your Growth, Our"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  37.928802589%,
+  38.1867022654% {
+    content: "​Your Growth, Ou";
+    content: "​Your Growth, Ou"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  38.1877022654%,
+  38.4456019417% {
+    content: "​Your Growth, O";
+    content: "​Your Growth, O"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  38.4466019417%,
+  38.7045016181% {
+    content: "​Your Growth, ";
+    content: "​Your Growth, "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  38.7055016181%,
+  38.9634012945% {
+    content: "​Your Growth,";
+    content: "​Your Growth,"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  38.9644012945%,
+  39.2223009709% {
+    content: "​Your Growth";
+    content: "​Your Growth"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  39.2233009709%,
+  39.4812006472% {
+    content: "​Your Growt";
+    content: "​Your Growt"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  39.4822006472%,
+  39.7401003236% {
+    content: "​Your Grow";
+    content: "​Your Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  39.7411003236%,
+  39.999% {
+    content: "​Your Gro";
+    content: "​Your Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  40%,
+  40.2578996764% {
+    content: "​Your Gr";
+    content: "​Your Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  40.2588996764%,
+  40.5167993528% {
+    content: "​Your G";
+    content: "​Your G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  40.5177993528%,
+  40.7756990291% {
+    content: "​Your ";
+    content: "​Your "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  40.7766990291%,
+  41.0345987055% {
+    content: "​Your";
+    content: "​Your"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  41.0355987055%,
+  41.2934983819% {
+    content: "​You";
+    content: "​You"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  41.2944983819%,
+  41.5523980583% {
+    content: "​Yo";
+    content: "​Yo"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  41.5533980583%,
+  41.8112977346% {
+    content: "​Y";
+    content: "​Y"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  41.8122977346%,
+  45.0475436893% {
+    content: "​";
+    content: "​"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  45.0485436893%,
+  45.3711682848% {
+    content: "​I";
+    content: "​I"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  45.3721682848%,
+  45.6947928803% {
+    content: "​In";
+    content: "​In"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  45.6957928803%,
+  46.0184174757% {
+    content: "​Inn";
+    content: "​Inn"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  46.0194174757%,
+  46.3420420712% {
+    content: "​Inno";
+    content: "​Inno"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  46.3430420712%,
+  46.6656666667% {
+    content: "​Innov";
+    content: "​Innov"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  46.6666666667%,
+  46.9892912621% {
+    content: "​Innova";
+    content: "​Innova"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  46.9902912621%,
+  47.3129158576% {
+    content: "​Innovat";
+    content: "​Innovat"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  47.3139158576%,
+  47.6365404531% {
+    content: "​Innovate";
+    content: "​Innovate"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  47.6375404531%,
+  47.9601650485% {
+    content: "​Innovate.";
+    content: "​Innovate."/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  47.9611650485%,
+  48.283789644% {
+    content: "​Innovate. ";
+    content: "​Innovate. "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  48.284789644%,
+  48.6074142395% {
+    content: "​Innovate. G";
+    content: "​Innovate. G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  48.6084142395%,
+  48.931038835% {
+    content: "​Innovate. Gr";
+    content: "​Innovate. Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  48.932038835%,
+  49.2546634304% {
+    content: "​Innovate. Gro";
+    content: "​Innovate. Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  49.2556634304%,
+  49.5782880259% {
+    content: "​Innovate. Grow";
+    content: "​Innovate. Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  49.5792880259%,
+  49.9019126214% {
+    content: "​Innovate. Grow.";
+    content: "​Innovate. Grow."/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  49.9029126214%,
+  50.2255372168% {
+    content: "​Innovate. Grow. ";
+    content: "​Innovate. Grow. "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  50.2265372168%,
+  50.5491618123% {
+    content: "​Innovate. Grow. T";
+    content: "​Innovate. Grow. T"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  50.5501618123%,
+  50.8727864078% {
+    content: "​Innovate. Grow. Th";
+    content: "​Innovate. Grow. Th"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  50.8737864078%,
+  51.1964110032% {
+    content: "​Innovate. Grow. Thr";
+    content: "​Innovate. Grow. Thr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  51.1974110032%,
+  51.5200355987% {
+    content: "​Innovate. Grow. Thri";
+    content: "​Innovate. Grow. Thri"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  51.5210355987%,
+  51.8436601942% {
+    content: "​Innovate. Grow. Thriv";
+    content: "​Innovate. Grow. Thriv"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  51.8446601942%,
+  52.1672847896% {
+    content: "​Innovate. Grow. Thrive";
+    content: "​Innovate. Grow. Thrive"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  52.1682847896%,
+  59.2223009709% {
+    content: "​Innovate. Grow. Thrive.";
+    content: "​Innovate. Grow. Thrive."/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  59.2233009709%,
+  59.4812006472% {
+    content: "​Innovate. Grow. Thrive";
+    content: "​Innovate. Grow. Thrive"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  59.4822006472%,
+  59.7401003236% {
+    content: "​Innovate. Grow. Thriv";
+    content: "​Innovate. Grow. Thriv"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  59.7411003236%,
+  59.999% {
+    content: "​Innovate. Grow. Thri";
+    content: "​Innovate. Grow. Thri"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  60%,
+  60.2578996764% {
+    content: "​Innovate. Grow. Thr";
+    content: "​Innovate. Grow. Thr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  60.2588996764%,
+  60.5167993528% {
+    content: "​Innovate. Grow. Th";
+    content: "​Innovate. Grow. Th"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  60.5177993528%,
+  60.7756990291% {
+    content: "​Innovate. Grow. T";
+    content: "​Innovate. Grow. T"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  60.7766990291%,
+  61.0345987055% {
+    content: "​Innovate. Grow. ";
+    content: "​Innovate. Grow. "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  61.0355987055%,
+  61.2934983819% {
+    content: "​Innovate. Grow.";
+    content: "​Innovate. Grow."/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  61.2944983819%,
+  61.5523980583% {
+    content: "​Innovate. Grow";
+    content: "​Innovate. Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  61.5533980583%,
+  61.8112977346% {
+    content: "​Innovate. Gro";
+    content: "​Innovate. Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  61.8122977346%,
+  62.070197411% {
+    content: "​Innovate. Gr";
+    content: "​Innovate. Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  62.071197411%,
+  62.3290970874% {
+    content: "​Innovate. G";
+    content: "​Innovate. G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  62.3300970874%,
+  62.5879967638% {
+    content: "​Innovate. ";
+    content: "​Innovate. "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  62.5889967638%,
+  62.8468964401% {
+    content: "​Innovate.";
+    content: "​Innovate."/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  62.8478964401%,
+  63.1057961165% {
+    content: "​Innovate";
+    content: "​Innovate"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  63.1067961165%,
+  63.3646957929% {
+    content: "​Innovat";
+    content: "​Innovat"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  63.3656957929%,
+  63.6235954693% {
+    content: "​Innova";
+    content: "​Innova"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  63.6245954693%,
+  63.8824951456% {
+    content: "​Innov";
+    content: "​Innov"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  63.8834951456%,
+  64.141394822% {
+    content: "​Inno";
+    content: "​Inno"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  64.142394822%,
+  64.4002944984% {
+    content: "​Inn";
+    content: "​Inn"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  64.4012944984%,
+  64.6591941748% {
+    content: "​In";
+    content: "​In"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  64.6601941748%,
+  64.9180938511% {
+    content: "​I";
+    content: "​I"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  64.9190938511%,
+  68.1543398058% {
+    content: "​";
+    content: "​"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  68.1553398058%,
+  68.4779644013% {
+    content: "​C";
+    content: "​C"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  68.4789644013%,
+  68.8015889968% {
+    content: "​Cu";
+    content: "​Cu"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  68.8025889968%,
+  69.1252135922% {
+    content: "​Cul";
+    content: "​Cul"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  69.1262135922%,
+  69.4488381877% {
+    content: "​Cult";
+    content: "​Cult"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  69.4498381877%,
+  69.7724627832% {
+    content: "​Culti";
+    content: "​Culti"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  69.7734627832%,
+  70.0960873786% {
+    content: "​Cultiv";
+    content: "​Cultiv"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  70.0970873786%,
+  70.4197119741% {
+    content: "​Cultiva";
+    content: "​Cultiva"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  70.4207119741%,
+  70.7433365696% {
+    content: "​Cultivat";
+    content: "​Cultivat"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  70.7443365696%,
+  71.066961165% {
+    content: "​Cultivati";
+    content: "​Cultivati"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  71.067961165%,
+  71.3905857605% {
+    content: "​Cultivatin";
+    content: "​Cultivatin"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  71.3915857605%,
+  71.714210356% {
+    content: "​Cultivating";
+    content: "​Cultivating"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  71.715210356%,
+  72.0378349515% {
+    content: "​Cultivating ";
+    content: "​Cultivating "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  72.0388349515%,
+  72.3614595469% {
+    content: "​Cultivating G";
+    content: "​Cultivating G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  72.3624595469%,
+  72.6850841424% {
+    content: "​Cultivating Gr";
+    content: "​Cultivating Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  72.6860841424%,
+  73.0087087379% {
+    content: "​Cultivating Gro";
+    content: "​Cultivating Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  73.0097087379%,
+  73.3323333333% {
+    content: "​Cultivating Grow";
+    content: "​Cultivating Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  73.3333333333%,
+  73.6559579288% {
+    content: "​Cultivating Growt";
+    content: "​Cultivating Growt"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  73.6569579288%,
+  73.9795825243% {
+    content: "​Cultivating Growth";
+    content: "​Cultivating Growth"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  73.9805825243%,
+  74.3032071197% {
+    content: "​Cultivating Growth,";
+    content: "​Cultivating Growth,"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  74.3042071197%,
+  74.6268317152% {
+    content: "​Cultivating Growth, ";
+    content: "​Cultivating Growth, "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  74.6278317152%,
+  74.9504563107% {
+    content: "​Cultivating Growth, E";
+    content: "​Cultivating Growth, E"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  74.9514563107%,
+  75.2740809061% {
+    content: "​Cultivating Growth, Em";
+    content: "​Cultivating Growth, Em"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  75.2750809061%,
+  75.5977055016% {
+    content: "​Cultivating Growth, Emp";
+    content: "​Cultivating Growth, Emp"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  75.5987055016%,
+  75.9213300971% {
+    content: "​Cultivating Growth, Empo";
+    content: "​Cultivating Growth, Empo"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  75.9223300971%,
+  76.2449546926% {
+    content: "​Cultivating Growth, Empow";
+    content: "​Cultivating Growth, Empow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  76.2459546926%,
+  76.568579288% {
+    content: "​Cultivating Growth, Empowe";
+    content: "​Cultivating Growth, Empowe"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  76.569579288%,
+  76.8922038835% {
+    content: "​Cultivating Growth, Empower";
+    content: "​Cultivating Growth, Empower"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  76.8932038835%,
+  77.215828479% {
+    content: "​Cultivating Growth, Empoweri";
+    content: "​Cultivating Growth, Empoweri"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  77.216828479%,
+  77.5394530744% {
+    content: "​Cultivating Growth, Empowerin";
+    content: "​Cultivating Growth, Empowerin"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  77.5404530744%,
+  77.8630776699% {
+    content: "​Cultivating Growth, Empowering";
+    content: "​Cultivating Growth, Empowering"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  77.8640776699%,
+  78.1867022654% {
+    content: "​Cultivating Growth, Empowering ";
+    content: "​Cultivating Growth, Empowering "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  78.1877022654%,
+  78.5103268608% {
+    content: "​Cultivating Growth, Empowering S";
+    content: "​Cultivating Growth, Empowering S"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  78.5113268608%,
+  78.8339514563% {
+    content: "​Cultivating Growth, Empowering Su";
+    content: "​Cultivating Growth, Empowering Su"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  78.8349514563%,
+  79.1575760518% {
+    content: "​Cultivating Growth, Empowering Suc";
+    content: "​Cultivating Growth, Empowering Suc"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  79.1585760518%,
+  79.4812006472% {
+    content: "​Cultivating Growth, Empowering Succ";
+    content: "​Cultivating Growth, Empowering Succ"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  79.4822006472%,
+  79.8048252427% {
+    content: "​Cultivating Growth, Empowering Succe";
+    content: "​Cultivating Growth, Empowering Succe"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  79.8058252427%,
+  80.1284498382% {
+    content: "​Cultivating Growth, Empowering Succes";
+    content: "​Cultivating Growth, Empowering Succes"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  80.1294498382%,
+  87.1834660194% {
+    content: "​Cultivating Growth, Empowering Success";
+    content: "​Cultivating Growth, Empowering Success"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  87.1844660194%,
+  87.4423656958% {
+    content: "​Cultivating Growth, Empowering Succes";
+    content: "​Cultivating Growth, Empowering Succes"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  87.4433656958%,
+  87.7012653722% {
+    content: "​Cultivating Growth, Empowering Succe";
+    content: "​Cultivating Growth, Empowering Succe"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  87.7022653722%,
+  87.9601650485% {
+    content: "​Cultivating Growth, Empowering Succ";
+    content: "​Cultivating Growth, Empowering Succ"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  87.9611650485%,
+  88.2190647249% {
+    content: "​Cultivating Growth, Empowering Suc";
+    content: "​Cultivating Growth, Empowering Suc"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  88.2200647249%,
+  88.4779644013% {
+    content: "​Cultivating Growth, Empowering Su";
+    content: "​Cultivating Growth, Empowering Su"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  88.4789644013%,
+  88.7368640777% {
+    content: "​Cultivating Growth, Empowering S";
+    content: "​Cultivating Growth, Empowering S"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  88.7378640777%,
+  88.995763754% {
+    content: "​Cultivating Growth, Empowering ";
+    content: "​Cultivating Growth, Empowering "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  88.996763754%,
+  89.2546634304% {
+    content: "​Cultivating Growth, Empowering";
+    content: "​Cultivating Growth, Empowering"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  89.2556634304%,
+  89.5135631068% {
+    content: "​Cultivating Growth, Empowerin";
+    content: "​Cultivating Growth, Empowerin"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  89.5145631068%,
+  89.7724627832% {
+    content: "​Cultivating Growth, Empoweri";
+    content: "​Cultivating Growth, Empoweri"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  89.7734627832%,
+  90.0313624595% {
+    content: "​Cultivating Growth, Empower";
+    content: "​Cultivating Growth, Empower"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  90.0323624595%,
+  90.2902621359% {
+    content: "​Cultivating Growth, Empowe";
+    content: "​Cultivating Growth, Empowe"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  90.2912621359%,
+  90.5491618123% {
+    content: "​Cultivating Growth, Empow";
+    content: "​Cultivating Growth, Empow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  90.5501618123%,
+  90.8080614887% {
+    content: "​Cultivating Growth, Empo";
+    content: "​Cultivating Growth, Empo"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  90.8090614887%,
+  91.066961165% {
+    content: "​Cultivating Growth, Emp";
+    content: "​Cultivating Growth, Emp"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  91.067961165%,
+  91.3258608414% {
+    content: "​Cultivating Growth, Em";
+    content: "​Cultivating Growth, Em"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  91.3268608414%,
+  91.5847605178% {
+    content: "​Cultivating Growth, E";
+    content: "​Cultivating Growth, E"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  91.5857605178%,
+  91.8436601942% {
+    content: "​Cultivating Growth, ";
+    content: "​Cultivating Growth, "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  91.8446601942%,
+  92.1025598706% {
+    content: "​Cultivating Growth,";
+    content: "​Cultivating Growth,"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  92.1035598706%,
+  92.3614595469% {
+    content: "​Cultivating Growth";
+    content: "​Cultivating Growth"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  92.3624595469%,
+  92.6203592233% {
+    content: "​Cultivating Growt";
+    content: "​Cultivating Growt"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  92.6213592233%,
+  92.8792588997% {
+    content: "​Cultivating Grow";
+    content: "​Cultivating Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  92.8802588997%,
+  93.1381585761% {
+    content: "​Cultivating Gro";
+    content: "​Cultivating Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  93.1391585761%,
+  93.3970582524% {
+    content: "​Cultivating Gr";
+    content: "​Cultivating Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  93.3980582524%,
+  93.6559579288% {
+    content: "​Cultivating G";
+    content: "​Cultivating G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  93.6569579288%,
+  93.9148576052% {
+    content: "​Cultivating ";
+    content: "​Cultivating "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  93.9158576052%,
+  94.1737572816% {
+    content: "​Cultivating";
+    content: "​Cultivating"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  94.1747572816%,
+  94.4326569579% {
+    content: "​Cultivatin";
+    content: "​Cultivatin"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  94.4336569579%,
+  94.6915566343% {
+    content: "​Cultivati";
+    content: "​Cultivati"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  94.6925566343%,
+  94.9504563107% {
+    content: "​Cultivat";
+    content: "​Cultivat"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  94.9514563107%,
+  95.2093559871% {
+    content: "​Cultiva";
+    content: "​Cultiva"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  95.2103559871%,
+  95.4682556634% {
+    content: "​Cultiv";
+    content: "​Cultiv"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  95.4692556634%,
+  95.7271553398% {
+    content: "​Culti";
+    content: "​Culti"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  95.7281553398%,
+  95.9860550162% {
+    content: "​Cult";
+    content: "​Cult"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  95.9870550162%,
+  96.2449546926% {
+    content: "​Cul";
+    content: "​Cul"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  96.2459546926%,
+  96.5038543689% {
+    content: "​Cu";
+    content: "​Cu"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  96.5048543689%,
+  96.7627540453% {
+    content: "​C";
+    content: "​C"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  96.7637540453%,
+  100% {
+    content: "​";
+    content: "​"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+}
+@keyframes typed-0 {
+  0%,
+  0.3226245955% {
+    content: "​W";
+    content: "​W"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  0.3236245955%,
+  0.6462491909% {
+    content: "​We";
+    content: "​We"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  0.6472491909%,
+  0.9698737864% {
+    content: "​We ";
+    content: "​We "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  0.9708737864%,
+  1.2934983819% {
+    content: "​We G";
+    content: "​We G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  1.2944983819%,
+  1.6171229773% {
+    content: "​We Gr";
+    content: "​We Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  1.6181229773%,
+  1.9407475728% {
+    content: "​We Gro";
+    content: "​We Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  1.9417475728%,
+  2.2643721683% {
+    content: "​We Grow";
+    content: "​We Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  2.2653721683%,
+  2.5879967638% {
+    content: "​We Grow ";
+    content: "​We Grow "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  2.5889967638%,
+  2.9116213592% {
+    content: "​We Grow B";
+    content: "​We Grow B"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  2.9126213592%,
+  3.2352459547% {
+    content: "​We Grow Bu";
+    content: "​We Grow Bu"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  3.2362459547%,
+  3.5588705502% {
+    content: "​We Grow Bus";
+    content: "​We Grow Bus"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  3.5598705502%,
+  3.8824951456% {
+    content: "​We Grow Busi";
+    content: "​We Grow Busi"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  3.8834951456%,
+  4.2061197411% {
+    content: "​We Grow Busin";
+    content: "​We Grow Busin"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  4.2071197411%,
+  4.5297443366% {
+    content: "​We Grow Busine";
+    content: "​We Grow Busine"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  4.5307443366%,
+  4.853368932% {
+    content: "​We Grow Busines";
+    content: "​We Grow Busines"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  4.854368932%,
+  5.1769935275% {
+    content: "​We Grow Business";
+    content: "​We Grow Business"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  5.1779935275%,
+  5.500618123% {
+    content: "​We Grow Businesse";
+    content: "​We Grow Businesse"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  5.501618123%,
+  12.5556343042% {
+    content: "​We Grow Businesses";
+    content: "​We Grow Businesses"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  12.5566343042%,
+  12.8145339806% {
+    content: "​We Grow Businesse";
+    content: "​We Grow Businesse"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  12.8155339806%,
+  13.073433657% {
+    content: "​We Grow Business";
+    content: "​We Grow Business"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  13.074433657%,
+  13.3323333333% {
+    content: "​We Grow Busines";
+    content: "​We Grow Busines"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  13.3333333333%,
+  13.5912330097% {
+    content: "​We Grow Busine";
+    content: "​We Grow Busine"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  13.5922330097%,
+  13.8501326861% {
+    content: "​We Grow Busin";
+    content: "​We Grow Busin"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  13.8511326861%,
+  14.1090323625% {
+    content: "​We Grow Busi";
+    content: "​We Grow Busi"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  14.1100323625%,
+  14.3679320388% {
+    content: "​We Grow Bus";
+    content: "​We Grow Bus"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  14.3689320388%,
+  14.6268317152% {
+    content: "​We Grow Bu";
+    content: "​We Grow Bu"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  14.6278317152%,
+  14.8857313916% {
+    content: "​We Grow B";
+    content: "​We Grow B"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  14.8867313916%,
+  15.144631068% {
+    content: "​We Grow ";
+    content: "​We Grow "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  15.145631068%,
+  15.4035307443% {
+    content: "​We Grow";
+    content: "​We Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  15.4045307443%,
+  15.6624304207% {
+    content: "​We Gro";
+    content: "​We Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  15.6634304207%,
+  15.9213300971% {
+    content: "​We Gr";
+    content: "​We Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  15.9223300971%,
+  16.1802297735% {
+    content: "​We G";
+    content: "​We G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  16.1812297735%,
+  16.4391294498% {
+    content: "​We ";
+    content: "​We "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  16.4401294498%,
+  16.6980291262% {
+    content: "​We";
+    content: "​We"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  16.6990291262%,
+  16.9569288026% {
+    content: "​W";
+    content: "​W"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  16.9579288026%,
+  20.1931747573% {
+    content: "​";
+    content: "​"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  20.1941747573%,
+  20.5167993528% {
+    content: "​Y";
+    content: "​Y"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  20.5177993528%,
+  20.8404239482% {
+    content: "​Yo";
+    content: "​Yo"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  20.8414239482%,
+  21.1640485437% {
+    content: "​You";
+    content: "​You"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  21.1650485437%,
+  21.4876731392% {
+    content: "​Your";
+    content: "​Your"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  21.4886731392%,
+  21.8112977346% {
+    content: "​Your ";
+    content: "​Your "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  21.8122977346%,
+  22.1349223301% {
+    content: "​Your G";
+    content: "​Your G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  22.1359223301%,
+  22.4585469256% {
+    content: "​Your Gr";
+    content: "​Your Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  22.4595469256%,
+  22.782171521% {
+    content: "​Your Gro";
+    content: "​Your Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  22.783171521%,
+  23.1057961165% {
+    content: "​Your Grow";
+    content: "​Your Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  23.1067961165%,
+  23.429420712% {
+    content: "​Your Growt";
+    content: "​Your Growt"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  23.430420712%,
+  23.7530453074% {
+    content: "​Your Growth";
+    content: "​Your Growth"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  23.7540453074%,
+  24.0766699029% {
+    content: "​Your Growth,";
+    content: "​Your Growth,"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  24.0776699029%,
+  24.4002944984% {
+    content: "​Your Growth, ";
+    content: "​Your Growth, "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  24.4012944984%,
+  24.7239190939% {
+    content: "​Your Growth, O";
+    content: "​Your Growth, O"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  24.7249190939%,
+  25.0475436893% {
+    content: "​Your Growth, Ou";
+    content: "​Your Growth, Ou"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  25.0485436893%,
+  25.3711682848% {
+    content: "​Your Growth, Our";
+    content: "​Your Growth, Our"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  25.3721682848%,
+  25.6947928803% {
+    content: "​Your Growth, Our ";
+    content: "​Your Growth, Our "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  25.6957928803%,
+  26.0184174757% {
+    content: "​Your Growth, Our P";
+    content: "​Your Growth, Our P"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  26.0194174757%,
+  26.3420420712% {
+    content: "​Your Growth, Our Pr";
+    content: "​Your Growth, Our Pr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  26.3430420712%,
+  26.6656666667% {
+    content: "​Your Growth, Our Pri";
+    content: "​Your Growth, Our Pri"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  26.6666666667%,
+  26.9892912621% {
+    content: "​Your Growth, Our Prio";
+    content: "​Your Growth, Our Prio"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  26.9902912621%,
+  27.3129158576% {
+    content: "​Your Growth, Our Prior";
+    content: "​Your Growth, Our Prior"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  27.3139158576%,
+  27.6365404531% {
+    content: "​Your Growth, Our Priori";
+    content: "​Your Growth, Our Priori"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  27.6375404531%,
+  27.9601650485% {
+    content: "​Your Growth, Our Priorit";
+    content: "​Your Growth, Our Priorit"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  27.9611650485%,
+  28.283789644% {
+    content: "​Your Growth, Our Priority";
+    content: "​Your Growth, Our Priority"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  28.284789644%,
+  35.3388058252% {
+    content: "​Your Growth, Our Priority.";
+    content: "​Your Growth, Our Priority."/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  35.3398058252%,
+  35.5977055016% {
+    content: "​Your Growth, Our Priority";
+    content: "​Your Growth, Our Priority"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  35.5987055016%,
+  35.856605178% {
+    content: "​Your Growth, Our Priorit";
+    content: "​Your Growth, Our Priorit"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  35.857605178%,
+  36.1155048544% {
+    content: "​Your Growth, Our Priori";
+    content: "​Your Growth, Our Priori"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  36.1165048544%,
+  36.3744045307% {
+    content: "​Your Growth, Our Prior";
+    content: "​Your Growth, Our Prior"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  36.3754045307%,
+  36.6333042071% {
+    content: "​Your Growth, Our Prio";
+    content: "​Your Growth, Our Prio"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  36.6343042071%,
+  36.8922038835% {
+    content: "​Your Growth, Our Pri";
+    content: "​Your Growth, Our Pri"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  36.8932038835%,
+  37.1511035599% {
+    content: "​Your Growth, Our Pr";
+    content: "​Your Growth, Our Pr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  37.1521035599%,
+  37.4100032362% {
+    content: "​Your Growth, Our P";
+    content: "​Your Growth, Our P"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  37.4110032362%,
+  37.6689029126% {
+    content: "​Your Growth, Our ";
+    content: "​Your Growth, Our "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  37.6699029126%,
+  37.927802589% {
+    content: "​Your Growth, Our";
+    content: "​Your Growth, Our"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  37.928802589%,
+  38.1867022654% {
+    content: "​Your Growth, Ou";
+    content: "​Your Growth, Ou"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  38.1877022654%,
+  38.4456019417% {
+    content: "​Your Growth, O";
+    content: "​Your Growth, O"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  38.4466019417%,
+  38.7045016181% {
+    content: "​Your Growth, ";
+    content: "​Your Growth, "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  38.7055016181%,
+  38.9634012945% {
+    content: "​Your Growth,";
+    content: "​Your Growth,"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  38.9644012945%,
+  39.2223009709% {
+    content: "​Your Growth";
+    content: "​Your Growth"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  39.2233009709%,
+  39.4812006472% {
+    content: "​Your Growt";
+    content: "​Your Growt"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  39.4822006472%,
+  39.7401003236% {
+    content: "​Your Grow";
+    content: "​Your Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  39.7411003236%,
+  39.999% {
+    content: "​Your Gro";
+    content: "​Your Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  40%,
+  40.2578996764% {
+    content: "​Your Gr";
+    content: "​Your Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  40.2588996764%,
+  40.5167993528% {
+    content: "​Your G";
+    content: "​Your G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  40.5177993528%,
+  40.7756990291% {
+    content: "​Your ";
+    content: "​Your "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  40.7766990291%,
+  41.0345987055% {
+    content: "​Your";
+    content: "​Your"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  41.0355987055%,
+  41.2934983819% {
+    content: "​You";
+    content: "​You"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  41.2944983819%,
+  41.5523980583% {
+    content: "​Yo";
+    content: "​Yo"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  41.5533980583%,
+  41.8112977346% {
+    content: "​Y";
+    content: "​Y"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  41.8122977346%,
+  45.0475436893% {
+    content: "​";
+    content: "​"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  45.0485436893%,
+  45.3711682848% {
+    content: "​I";
+    content: "​I"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  45.3721682848%,
+  45.6947928803% {
+    content: "​In";
+    content: "​In"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  45.6957928803%,
+  46.0184174757% {
+    content: "​Inn";
+    content: "​Inn"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  46.0194174757%,
+  46.3420420712% {
+    content: "​Inno";
+    content: "​Inno"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  46.3430420712%,
+  46.6656666667% {
+    content: "​Innov";
+    content: "​Innov"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  46.6666666667%,
+  46.9892912621% {
+    content: "​Innova";
+    content: "​Innova"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  46.9902912621%,
+  47.3129158576% {
+    content: "​Innovat";
+    content: "​Innovat"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  47.3139158576%,
+  47.6365404531% {
+    content: "​Innovate";
+    content: "​Innovate"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  47.6375404531%,
+  47.9601650485% {
+    content: "​Innovate.";
+    content: "​Innovate."/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  47.9611650485%,
+  48.283789644% {
+    content: "​Innovate. ";
+    content: "​Innovate. "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  48.284789644%,
+  48.6074142395% {
+    content: "​Innovate. G";
+    content: "​Innovate. G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  48.6084142395%,
+  48.931038835% {
+    content: "​Innovate. Gr";
+    content: "​Innovate. Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  48.932038835%,
+  49.2546634304% {
+    content: "​Innovate. Gro";
+    content: "​Innovate. Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  49.2556634304%,
+  49.5782880259% {
+    content: "​Innovate. Grow";
+    content: "​Innovate. Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  49.5792880259%,
+  49.9019126214% {
+    content: "​Innovate. Grow.";
+    content: "​Innovate. Grow."/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  49.9029126214%,
+  50.2255372168% {
+    content: "​Innovate. Grow. ";
+    content: "​Innovate. Grow. "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  50.2265372168%,
+  50.5491618123% {
+    content: "​Innovate. Grow. T";
+    content: "​Innovate. Grow. T"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  50.5501618123%,
+  50.8727864078% {
+    content: "​Innovate. Grow. Th";
+    content: "​Innovate. Grow. Th"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  50.8737864078%,
+  51.1964110032% {
+    content: "​Innovate. Grow. Thr";
+    content: "​Innovate. Grow. Thr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  51.1974110032%,
+  51.5200355987% {
+    content: "​Innovate. Grow. Thri";
+    content: "​Innovate. Grow. Thri"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  51.5210355987%,
+  51.8436601942% {
+    content: "​Innovate. Grow. Thriv";
+    content: "​Innovate. Grow. Thriv"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  51.8446601942%,
+  52.1672847896% {
+    content: "​Innovate. Grow. Thrive";
+    content: "​Innovate. Grow. Thrive"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  52.1682847896%,
+  59.2223009709% {
+    content: "​Innovate. Grow. Thrive.";
+    content: "​Innovate. Grow. Thrive."/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  59.2233009709%,
+  59.4812006472% {
+    content: "​Innovate. Grow. Thrive";
+    content: "​Innovate. Grow. Thrive"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  59.4822006472%,
+  59.7401003236% {
+    content: "​Innovate. Grow. Thriv";
+    content: "​Innovate. Grow. Thriv"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  59.7411003236%,
+  59.999% {
+    content: "​Innovate. Grow. Thri";
+    content: "​Innovate. Grow. Thri"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  60%,
+  60.2578996764% {
+    content: "​Innovate. Grow. Thr";
+    content: "​Innovate. Grow. Thr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  60.2588996764%,
+  60.5167993528% {
+    content: "​Innovate. Grow. Th";
+    content: "​Innovate. Grow. Th"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  60.5177993528%,
+  60.7756990291% {
+    content: "​Innovate. Grow. T";
+    content: "​Innovate. Grow. T"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  60.7766990291%,
+  61.0345987055% {
+    content: "​Innovate. Grow. ";
+    content: "​Innovate. Grow. "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  61.0355987055%,
+  61.2934983819% {
+    content: "​Innovate. Grow.";
+    content: "​Innovate. Grow."/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  61.2944983819%,
+  61.5523980583% {
+    content: "​Innovate. Grow";
+    content: "​Innovate. Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  61.5533980583%,
+  61.8112977346% {
+    content: "​Innovate. Gro";
+    content: "​Innovate. Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  61.8122977346%,
+  62.070197411% {
+    content: "​Innovate. Gr";
+    content: "​Innovate. Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  62.071197411%,
+  62.3290970874% {
+    content: "​Innovate. G";
+    content: "​Innovate. G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  62.3300970874%,
+  62.5879967638% {
+    content: "​Innovate. ";
+    content: "​Innovate. "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  62.5889967638%,
+  62.8468964401% {
+    content: "​Innovate.";
+    content: "​Innovate."/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  62.8478964401%,
+  63.1057961165% {
+    content: "​Innovate";
+    content: "​Innovate"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  63.1067961165%,
+  63.3646957929% {
+    content: "​Innovat";
+    content: "​Innovat"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  63.3656957929%,
+  63.6235954693% {
+    content: "​Innova";
+    content: "​Innova"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  63.6245954693%,
+  63.8824951456% {
+    content: "​Innov";
+    content: "​Innov"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  63.8834951456%,
+  64.141394822% {
+    content: "​Inno";
+    content: "​Inno"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  64.142394822%,
+  64.4002944984% {
+    content: "​Inn";
+    content: "​Inn"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  64.4012944984%,
+  64.6591941748% {
+    content: "​In";
+    content: "​In"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  64.6601941748%,
+  64.9180938511% {
+    content: "​I";
+    content: "​I"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  64.9190938511%,
+  68.1543398058% {
+    content: "​";
+    content: "​"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  68.1553398058%,
+  68.4779644013% {
+    content: "​C";
+    content: "​C"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  68.4789644013%,
+  68.8015889968% {
+    content: "​Cu";
+    content: "​Cu"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  68.8025889968%,
+  69.1252135922% {
+    content: "​Cul";
+    content: "​Cul"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  69.1262135922%,
+  69.4488381877% {
+    content: "​Cult";
+    content: "​Cult"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  69.4498381877%,
+  69.7724627832% {
+    content: "​Culti";
+    content: "​Culti"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  69.7734627832%,
+  70.0960873786% {
+    content: "​Cultiv";
+    content: "​Cultiv"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  70.0970873786%,
+  70.4197119741% {
+    content: "​Cultiva";
+    content: "​Cultiva"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  70.4207119741%,
+  70.7433365696% {
+    content: "​Cultivat";
+    content: "​Cultivat"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  70.7443365696%,
+  71.066961165% {
+    content: "​Cultivati";
+    content: "​Cultivati"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  71.067961165%,
+  71.3905857605% {
+    content: "​Cultivatin";
+    content: "​Cultivatin"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  71.3915857605%,
+  71.714210356% {
+    content: "​Cultivating";
+    content: "​Cultivating"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  71.715210356%,
+  72.0378349515% {
+    content: "​Cultivating ";
+    content: "​Cultivating "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  72.0388349515%,
+  72.3614595469% {
+    content: "​Cultivating G";
+    content: "​Cultivating G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  72.3624595469%,
+  72.6850841424% {
+    content: "​Cultivating Gr";
+    content: "​Cultivating Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  72.6860841424%,
+  73.0087087379% {
+    content: "​Cultivating Gro";
+    content: "​Cultivating Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  73.0097087379%,
+  73.3323333333% {
+    content: "​Cultivating Grow";
+    content: "​Cultivating Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  73.3333333333%,
+  73.6559579288% {
+    content: "​Cultivating Growt";
+    content: "​Cultivating Growt"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  73.6569579288%,
+  73.9795825243% {
+    content: "​Cultivating Growth";
+    content: "​Cultivating Growth"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  73.9805825243%,
+  74.3032071197% {
+    content: "​Cultivating Growth,";
+    content: "​Cultivating Growth,"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  74.3042071197%,
+  74.6268317152% {
+    content: "​Cultivating Growth, ";
+    content: "​Cultivating Growth, "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  74.6278317152%,
+  74.9504563107% {
+    content: "​Cultivating Growth, E";
+    content: "​Cultivating Growth, E"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  74.9514563107%,
+  75.2740809061% {
+    content: "​Cultivating Growth, Em";
+    content: "​Cultivating Growth, Em"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  75.2750809061%,
+  75.5977055016% {
+    content: "​Cultivating Growth, Emp";
+    content: "​Cultivating Growth, Emp"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  75.5987055016%,
+  75.9213300971% {
+    content: "​Cultivating Growth, Empo";
+    content: "​Cultivating Growth, Empo"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  75.9223300971%,
+  76.2449546926% {
+    content: "​Cultivating Growth, Empow";
+    content: "​Cultivating Growth, Empow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  76.2459546926%,
+  76.568579288% {
+    content: "​Cultivating Growth, Empowe";
+    content: "​Cultivating Growth, Empowe"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  76.569579288%,
+  76.8922038835% {
+    content: "​Cultivating Growth, Empower";
+    content: "​Cultivating Growth, Empower"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  76.8932038835%,
+  77.215828479% {
+    content: "​Cultivating Growth, Empoweri";
+    content: "​Cultivating Growth, Empoweri"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  77.216828479%,
+  77.5394530744% {
+    content: "​Cultivating Growth, Empowerin";
+    content: "​Cultivating Growth, Empowerin"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  77.5404530744%,
+  77.8630776699% {
+    content: "​Cultivating Growth, Empowering";
+    content: "​Cultivating Growth, Empowering"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  77.8640776699%,
+  78.1867022654% {
+    content: "​Cultivating Growth, Empowering ";
+    content: "​Cultivating Growth, Empowering "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  78.1877022654%,
+  78.5103268608% {
+    content: "​Cultivating Growth, Empowering S";
+    content: "​Cultivating Growth, Empowering S"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  78.5113268608%,
+  78.8339514563% {
+    content: "​Cultivating Growth, Empowering Su";
+    content: "​Cultivating Growth, Empowering Su"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  78.8349514563%,
+  79.1575760518% {
+    content: "​Cultivating Growth, Empowering Suc";
+    content: "​Cultivating Growth, Empowering Suc"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  79.1585760518%,
+  79.4812006472% {
+    content: "​Cultivating Growth, Empowering Succ";
+    content: "​Cultivating Growth, Empowering Succ"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  79.4822006472%,
+  79.8048252427% {
+    content: "​Cultivating Growth, Empowering Succe";
+    content: "​Cultivating Growth, Empowering Succe"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  79.8058252427%,
+  80.1284498382% {
+    content: "​Cultivating Growth, Empowering Succes";
+    content: "​Cultivating Growth, Empowering Succes"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  80.1294498382%,
+  87.1834660194% {
+    content: "​Cultivating Growth, Empowering Success";
+    content: "​Cultivating Growth, Empowering Success"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  87.1844660194%,
+  87.4423656958% {
+    content: "​Cultivating Growth, Empowering Succes";
+    content: "​Cultivating Growth, Empowering Succes"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  87.4433656958%,
+  87.7012653722% {
+    content: "​Cultivating Growth, Empowering Succe";
+    content: "​Cultivating Growth, Empowering Succe"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  87.7022653722%,
+  87.9601650485% {
+    content: "​Cultivating Growth, Empowering Succ";
+    content: "​Cultivating Growth, Empowering Succ"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  87.9611650485%,
+  88.2190647249% {
+    content: "​Cultivating Growth, Empowering Suc";
+    content: "​Cultivating Growth, Empowering Suc"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  88.2200647249%,
+  88.4779644013% {
+    content: "​Cultivating Growth, Empowering Su";
+    content: "​Cultivating Growth, Empowering Su"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  88.4789644013%,
+  88.7368640777% {
+    content: "​Cultivating Growth, Empowering S";
+    content: "​Cultivating Growth, Empowering S"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  88.7378640777%,
+  88.995763754% {
+    content: "​Cultivating Growth, Empowering ";
+    content: "​Cultivating Growth, Empowering "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  88.996763754%,
+  89.2546634304% {
+    content: "​Cultivating Growth, Empowering";
+    content: "​Cultivating Growth, Empowering"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  89.2556634304%,
+  89.5135631068% {
+    content: "​Cultivating Growth, Empowerin";
+    content: "​Cultivating Growth, Empowerin"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  89.5145631068%,
+  89.7724627832% {
+    content: "​Cultivating Growth, Empoweri";
+    content: "​Cultivating Growth, Empoweri"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  89.7734627832%,
+  90.0313624595% {
+    content: "​Cultivating Growth, Empower";
+    content: "​Cultivating Growth, Empower"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  90.0323624595%,
+  90.2902621359% {
+    content: "​Cultivating Growth, Empowe";
+    content: "​Cultivating Growth, Empowe"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  90.2912621359%,
+  90.5491618123% {
+    content: "​Cultivating Growth, Empow";
+    content: "​Cultivating Growth, Empow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  90.5501618123%,
+  90.8080614887% {
+    content: "​Cultivating Growth, Empo";
+    content: "​Cultivating Growth, Empo"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  90.8090614887%,
+  91.066961165% {
+    content: "​Cultivating Growth, Emp";
+    content: "​Cultivating Growth, Emp"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  91.067961165%,
+  91.3258608414% {
+    content: "​Cultivating Growth, Em";
+    content: "​Cultivating Growth, Em"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  91.3268608414%,
+  91.5847605178% {
+    content: "​Cultivating Growth, E";
+    content: "​Cultivating Growth, E"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  91.5857605178%,
+  91.8436601942% {
+    content: "​Cultivating Growth, ";
+    content: "​Cultivating Growth, "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  91.8446601942%,
+  92.1025598706% {
+    content: "​Cultivating Growth,";
+    content: "​Cultivating Growth,"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  92.1035598706%,
+  92.3614595469% {
+    content: "​Cultivating Growth";
+    content: "​Cultivating Growth"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  92.3624595469%,
+  92.6203592233% {
+    content: "​Cultivating Growt";
+    content: "​Cultivating Growt"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  92.6213592233%,
+  92.8792588997% {
+    content: "​Cultivating Grow";
+    content: "​Cultivating Grow"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  92.8802588997%,
+  93.1381585761% {
+    content: "​Cultivating Gro";
+    content: "​Cultivating Gro"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  93.1391585761%,
+  93.3970582524% {
+    content: "​Cultivating Gr";
+    content: "​Cultivating Gr"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  93.3980582524%,
+  93.6559579288% {
+    content: "​Cultivating G";
+    content: "​Cultivating G"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  93.6569579288%,
+  93.9148576052% {
+    content: "​Cultivating ";
+    content: "​Cultivating "/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  93.9158576052%,
+  94.1737572816% {
+    content: "​Cultivating";
+    content: "​Cultivating"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  94.1747572816%,
+  94.4326569579% {
+    content: "​Cultivatin";
+    content: "​Cultivatin"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  94.4336569579%,
+  94.6915566343% {
+    content: "​Cultivati";
+    content: "​Cultivati"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  94.6925566343%,
+  94.9504563107% {
+    content: "​Cultivat";
+    content: "​Cultivat"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  94.9514563107%,
+  95.2093559871% {
+    content: "​Cultiva";
+    content: "​Cultiva"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  95.2103559871%,
+  95.4682556634% {
+    content: "​Cultiv";
+    content: "​Cultiv"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  95.4692556634%,
+  95.7271553398% {
+    content: "​Culti";
+    content: "​Culti"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  95.7281553398%,
+  95.9860550162% {
+    content: "​Cult";
+    content: "​Cult"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  95.9870550162%,
+  96.2449546926% {
+    content: "​Cul";
+    content: "​Cul"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  96.2459546926%,
+  96.5038543689% {
+    content: "​Cu";
+    content: "​Cu"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  96.5048543689%,
+  96.7627540453% {
+    content: "​C";
+    content: "​C"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+  96.7637540453%,
+  100% {
+    content: "​";
+    content: "​"/"We Grow Businesses";
+    alt: "We Grow Businesses";
+  }
+}
+@-webkit-keyframes typed-0-caret {
+  75% {
+    border-color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes typed-0-caret {
+  75% {
+    border-color: rgba(0, 0, 0, 0);
+  }
+}
+@media (min-width: 1400px) {
+  .Slider > div *.TypeText {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .Slider > div *.TypeText {
+    font-size: 2.5rem;
+    line-height: 3rem !important;
+  }
+}
+@media (max-width: 575px) {
+  .Slider > div *.TypeText {
+    font-size: 2rem;
+    line-height: 2.2rem !important;
+  }
+}
+.Slider > div .Counter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 3em;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.Slider > div .Counter ul li {
+  text-align: right;
+}
+.Slider > div .Counter ul li .h1 {
+  font-size: 3em;
+}
+.Slider > div .Counter ul li .h6 {
+  font-size: 1em;
+}
+.Slider > div .Mouse {
+  display: block;
+  margin-left: auto;
+  width: 24px;
+  height: 90px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0;
+}
+.Slider > div .Mouse:before,
+.Slider > div .Mouse:after {
+  height: 42px;
+  width: 100%;
+  border-radius: 25px;
+  border: 2px solid var(--white);
+  content: "";
+  display: block;
+}
+.Slider > div .Mouse:after {
+  position: absolute;
+  height: 6px;
+  width: 2px;
+  left: 0;
+  top: 9px;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(7px);
+  transform: translateY(7px);
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+.Slider > div .MouseScroll {
+  -webkit-transform: rotate(45deg) translate(6px, 0);
+  transform: rotate(45deg) translate(6px, 0);
+  border-right: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  width: 16px;
+  height: 16px;
+  display: block;
+  -webkit-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-delay: alternate;
+  animation-delay: alternate;
+}
+.Slider > div .MouseScroll:before,
+.Slider > div .MouseScroll:after {
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  content: "";
+  display: block;
+  -webkit-transform: translate(9px, 10px);
+  transform: translate(9px, 10px);
+  -webkit-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+.Slider > div .MouseScroll:after {
+  -webkit-transform: translate(17px, 3px);
+  transform: translate(17px, 3px);
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+@-webkit-keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+@keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .Slider > div > :last-child {
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+  .Slider > div > :last-child ul {
+    padding: 0;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2em;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+@media (max-width: 767px) and (max-width: 450px) {
+  .Slider > div > :last-child ul {
+    gap: 1em;
+  }
+}
+@media (max-width: 767px) {
+  .Slider > div > :last-child ul li {
+    text-align: center;
+  }
+  .Slider > div > :last-child ul .h1 {
+    font-size: 2.5em !important;
+  }
+}
+@media (max-width: 767px) and (max-width: 450px) {
+  .Slider > div > :last-child ul .h1 {
+    font-size: 1.5em !important;
+  }
+}
+@media (max-width: 767px) {
+  .Slider > div > :last-child ul .h6 {
+    font-size: 1em !important;
+  }
+}
+@media (max-width: 767px) and (max-width: 450px) {
+  .Slider > div > :last-child ul .h6 {
+    font-size: 0.9em !important;
+  }
+}
+@media (max-width: 767px) {
+  .Slider > div > :last-child .Mouse {
+    margin: 20px auto 0;
+  }
+}
+.Slider .container {
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .Slider .container > div {
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.Slider .Ibanner {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin: 0 0 0 auto;
+}
+.rating {
+  overflow: inherit !important;
+  padding: 24px 0;
+  background: rgb(var(--thm1-rgb) / 0.05);
+}
+.rating .Rating .swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.rating a {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: left;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.rating a img {
+  height: 60px !important;
+  width: auto !important;
+  border: 1px solid rgb(var(--black-rgb) / 0.1);
+  border-radius: 4px;
+}
+.bgimg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.MHome section:not(.Slider) {
+  min-height: 100dvh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+}
+.Sec1 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6em;
+  gap: 2em;
+}
+@media (min-width: 992px) {
+  .Sec1 > div {
+    padding: 0 6.5vmax;
+  }
+}
+.Sec1 > div .Hi {
+  font-size: 1.2em;
+  line-height: 1;
+  font-family: var(--font1);
+  -webkit-writing-mode: sideways-lr;
+  -ms-writing-mode: sideways-lr;
+  writing-mode: sideways-lr;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  text-align: center;
+  font-weight: 300;
+}
+.Sec1 > div .Hi:after {
+  content: attr(data-text) !important;
+  font-size: 2.6em;
+  font-family: var(--font1);
+  display: block;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .Sec1 > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 1.1em;
+    gap: 2em;
+  }
+  .Sec1 > div .Hi {
+    -webkit-writing-mode: initial;
+    -ms-writing-mode: initial;
+    writing-mode: initial;
+  }
+}
+@media (min-width: 1200px) {
+  .Sec2 {
+    padding-top: 60px;
+  }
+}
+.Sec2 .SerV {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100% !important;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 3vmax 3vmax;
+}
+@media (max-width: 991px) {
+  .Sec2 .SerV {
+    padding: 0 2vmax 6.5vmax;
+    height: auto;
+    min-height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+.Sec2 .SerV.swiper-slide-next {
+  padding-left: 120px;
+}
+@media (min-width: 1400px) {
+  .Sec2 .SerV.swiper-slide-next {
+    padding-left: 150px;
+  }
+}
+.Sec2 .SerV .Text {
+  max-width: 800px;
+  width: calc(100% - 450px - 6.5vmax);
+  height: auto;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  padding: 1em 0 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Sec2 .SerV .Text > div:first-child {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: self-start;
+  -ms-flex-align: self-start;
+  align-items: self-start;
+}
+@media (max-width: 1400px) {
+  .Sec2 .SerV .Text {
+    width: calc(100% - 410px - 6.5vmax);
+  }
+}
+@media (max-width: 1200px) {
+  .Sec2 .SerV .Text {
+    width: calc(100% - 370px - 6.5vmax);
+  }
+}
+@media (max-width: 991px) {
+  .Sec2 .SerV .Text {
+    width: 100%;
+    padding: 0;
+  }
+}
+.Sec2 .SerV .Text .Heading {
+  font-size: 2.2em !important;
+  font-weight: 700 !important;
+}
+.Sec2 .SerV .Text h3 {
+  padding: 12px 20px;
+  background: rgb(var(--black-rgb) / 0.1);
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+  border-radius: 9px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.Sec2 .SerV .Text ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  row-gap: 16px;
+  margin: 0;
+  margin-top: 9px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.Sec2 .SerV .Text ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1.4;
+  width: calc(50% - 6px);
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.Sec2 .SerV .Text ul li:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0;
+  height: 24px;
+  min-width: 24px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="9" fill="%23ccc"/><circle cx="9" cy="9" r="7"/><polyline stroke="white" points="5 9 7 12 13 6"/></svg>');
+}
+@media (max-width: 575px) {
+  .Sec2 .SerV .Text ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .Sec2 .SerV .Text ul li {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+.Sec2 .SerV .img {
+  max-width: 450px;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+@media (min-width: 1601px) {
+  .Sec2 .SerV .img {
+    max-width: none;
+    max-height: 70dvh;
+  }
+}
+.Sec2 .SerV .img:after {
+  display: block;
+  padding-bottom: 100%;
+  content: "";
+}
+.Sec2 .SerV .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: right center;
+  object-position: right center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+@media (max-width: 1400px) {
+  .Sec2 .SerV .img {
+    max-width: 410px;
+    margin: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .Sec2 .SerV .img {
+    max-width: 370px;
+  }
+}
+@media (max-width: 991px) {
+  .Sec2 .SerV .img {
+    max-width: 450px;
+    height: auto;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    margin: 0 auto;
+  }
+}
+.Sec2 .SerV .img .imgboX {
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 9px;
+  right: 0;
+}
+.Sec2 .SerV .img .imgboX > div {
+  z-index: 1;
+  padding: 24px;
+  background: rgb(var(--white-rgb) / 0.9);
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  height: 100% !important;
+  width: 100%;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.Sec2 .SerV .img .imgboX > div * {
+  line-height: 1.4;
+}
+.Sec2 .SerV .img .imgboX > div h3 {
+  font-size: 20px;
+}
+.Sec2 .SerV .img .imgboX > div.show {
+  opacity: 1;
+  visibility: visible;
+  z-index: 3;
+}
+.Sec2 .SerV .img .imgboX > div .btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+.Sec2:hover .swiper-button-next,
+.Sec2:hover .swiper-button-next-child {
+  right: 0 !important;
+}
+.Sec2:hover .swiper-button-prev,
+.Sec2:hover .swiper-button-prev-child {
+  left: 0 !important;
+}
+.Sec2:hover .swiper-pagination {
+  opacity: 1;
+}
+.Sec2 .swiper {
+  z-index: inherit;
+  overflow: inherit;
+}
+.Sec2 .swiper:before {
+  content: attr(data-text) !important;
+  font-size: 4.4em;
+  padding-left: 3vmax;
+  text-transform: uppercase;
+  color: rgb(var(--black-rgb) / 0.7);
+  font-weight: 700;
+  z-index: 2;
+  letter-spacing: -1px;
+  font-family: var(--font1);
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  .Sec2 .swiper:before {
+    -webkit-writing-mode: inherit;
+    -ms-writing-mode: inherit;
+    writing-mode: inherit;
+    font-size: 4em;
+    position: static;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .Sec2 .swiper:before {
+    font-size: 3.6em;
+  }
+}
+@media (max-width: 450px) {
+  .Sec2 .swiper:before {
+    font-size: 3.2em;
+  }
+}
+@media (max-width: 380px) {
+  .Sec2 .swiper:before {
+    font-size: 2.8em;
+  }
+}
+.Sec2 .SerName {
+  position: absolute;
+  bottom: 0.5vmax;
+  font-size: 15px;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 3;
+  left: 0;
+}
+@media (max-width: 992px) {
+  .Sec2 .SerName {
+    position: static;
+  }
+}
+@media (min-width: 1400px) {
+  .Sec2 .SerName {
+    bottom: 1.2vmax;
+  }
+}
+@media (min-width: 1600px) {
+  .Sec2 .SerName {
+    bottom: 2vmax;
+  }
+}
+.Sec2 .SerName .swiper-slide {
+  width: auto;
+  cursor: pointer;
+  counter-increment: count;
+  position: static;
+  -webkit-transform: none;
+  transform: none;
+}
+.Sec2 .SerName .swiper-slide span {
+  opacity: 0.7;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 9px;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  font-weight: 500;
+}
+.Sec2 .SerName .swiper-slide span:before {
+  content: "0" counter(count) ".";
+  display: none;
+}
+.Sec2 .SerName .swiper-slide img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 5vmax;
+  -webkit-transform: translateY(-9vmax);
+  transform: translateY(-9vmax);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 0.5em 0 0 0.5em;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  height: 45vh;
+  max-height: 350px;
+}
+@media (max-width: 1200px) {
+  .Sec2 .SerName .swiper-slide img {
+    display: none;
+  }
+}
+.Sec2 .SerName .swiper-slide-thumb-active span {
+  opacity: 1;
+  background: var(--white);
+  -webkit-box-shadow: 0 0 9px rgb(var(--black-rgb) / 0.1);
+  box-shadow: 0 0 9px rgb(var(--black-rgb) / 0.1);
+  color: var(--thm);
+}
+.Sec2 .SerName .swiper-slide-thumb-active + .swiper-slide img {
+  visibility: visible;
+  opacity: 1;
+}
+@media (min-width: 992px) {
+  .Sec2 .SerName .swiper-wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-transform: inherit !important;
+    transform: inherit !important;
+  }
+}
+@media (min-width: 450px) {
+  .Sec2 .SerName .swiper-wrapper:not(:has(> .swiper-slide:nth-child(3n + 3))) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 575px) {
+  .Sec2 .SerName .swiper-wrapper:not(:has(> .swiper-slide:nth-child(4n + 4))) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 767px) {
+  .Sec2 .SerName .swiper-wrapper:not(:has(> .swiper-slide:nth-child(6n + 6))) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .Sec2 .SerName .swiper-wrapper:not(:has(> .swiper-slide:nth-child(8n + 8))) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+.Sec3 .card {
+  border: none;
+  background: none;
+}
+.Sec3 .card video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  z-index: -1;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.Sec3 .card:before,
+.Sec3 .card:after {
+  height: 100%;
+  width: 1px;
+  background: #ccc;
+  position: absolute;
+  left: -1px;
+  top: 25px;
+  content: "";
+}
+.Sec3 .card:after {
+  width: 100%;
+  height: 1px;
+  top: -1px;
+}
+.Sec3 .card:first-child:before,
+.Sec3 .card:first-child:after {
+  display: none;
+}
+.Sec3 .card:nth-child(2):after {
+  display: none;
+}
+.Sec3 .card:nth-child(odd) {
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+}
+.Sec3 .card:nth-child(odd):before {
+  display: none;
+}
+.Sec3 .card:nth-child(even) {
+  -webkit-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+.Sec3 .card-body {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+.Sec3 .card-body > div {
+  height: 100%;
+  width: 100%;
+  padding: 90px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: var(--white);
+  margin: 0 auto;
+}
+.Sec3 .card-body img {
+  height: 80px;
+  width: 80px;
+}
+.Sec3 .card-body .h1 {
+  font-size: 2.7em;
+  line-height: 1;
+  font-weight: 800 !important;
+}
+@media (max-width: 450px) {
+  .Sec3 .card-body > div {
+    padding: 25px 0;
+  }
+  .Sec3 .card-body .h1 {
+    font-size: 2em;
+  }
+  .Sec3 .card-body .h6 {
+    font-size: 14px;
+  }
+}
+.Sec3 .card:hover > div {
+  opacity: 0;
+}
+.SecPortfolio .Work {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-flex-line-pack: start;
+  align-content: start;
+  place-items: stretch stretch;
+}
+@media (max-width: 1400px) {
+  .SecPortfolio .Work {
+    grid-gap: 18px;
+  }
+}
+@media (max-width: 1200px) {
+  .SecPortfolio .Work {
+    grid-gap: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .SecPortfolio .Work {
+    grid-gap: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .SecPortfolio .Work {
+    grid-gap: 9px;
+  }
+}
+@media (max-width: 575px) {
+  .SecPortfolio .Work {
+    grid-gap: 6px;
+  }
+}
+.SecPortfolio .Work a {
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .SecPortfolio .Work a {
+    border-radius: 5px;
+  }
+}
+.SecPortfolio .Work a:after {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: rgb(var(--black-rgb) / 0.7);
+  content: attr(data-text) " "
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="9" x2="15" y2="1"/><polyline points="10 1 15 1 15 6"/><polyline points="13 8 13 15 1 15 1 3 8 3"/></svg>') !important;
+  color: var(--white);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.SecPortfolio .Work a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.SecPortfolio .Work a span {
+  height: 35%;
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  font-size: 16px;
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(var(--black-rgb) / 0.88);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: var(--white);
+  white-space: nowrap;
+  font-weight: 300;
+}
+.SecPortfolio .Work a:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.SecPortfolio .Work a:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.SecPortfolio .Work a:hover span {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+.SecPortfolio .Work *:nth-child(1) {
+  grid-area: 1/1/3/4;
+}
+.SecPortfolio .Work *:nth-child(2) {
+  grid-area: 3/1/5/4;
+}
+.SecPortfolio .Work *:nth-child(3) {
+  grid-area: 1/4/5/8;
+}
+.SecPortfolio .Work *:nth-child(3):after {
+  font-size: 26px;
+  content: attr(data-text) " "
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="26" height="26" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="9" x2="15" y2="1"/><polyline points="10 1 15 1 15 6"/><polyline points="13 8 13 15 1 15 1 3 8 3"/></svg>') !important;
+}
+.SecPortfolio .Work *:nth-child(4) {
+  grid-area: 1/8/3/11;
+}
+.SecPortfolio .Work *:nth-child(5) {
+  grid-area: 3/8/5/11;
+}
+@media (max-width: 767px) {
+  .SecPortfolio .Work *:nth-child(1) {
+    grid-area: 1/1/2/5;
+  }
+  .SecPortfolio .Work *:nth-child(2) {
+    grid-area: 2/1/3/5;
+  }
+  .SecPortfolio .Work *:nth-child(3) {
+    grid-area: 1/5/3/11;
+  }
+  .SecPortfolio .Work *:nth-child(4) {
+    grid-area: 3/1/5/7;
+  }
+  .SecPortfolio .Work *:nth-child(5) {
+    grid-area: 3/7/5/11;
+  }
+}
+@media (max-width: 420px) {
+  .SecPortfolio .Work {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.SecCaseStudies .card {
+  border-radius: 15px;
+  background: none;
+  gap: 8px;
+  padding: 5px;
+}
+.SecCaseStudies .card img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.SecCaseStudies .card > * {
+  padding: 0;
+  border: none;
+  background: none;
+}
+.SecCaseStudies .card-body {
+  padding: 0 12px;
+}
+@media (max-width: 992px) {
+  .SecCaseStudies .card-body .h4 {
+    display: -webkit-box !important;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
+.SecCaseStudies .card:hover img {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+.SecCaseStudies .card:hover h3 {
+  color: var(--thm) !important;
+}
+.SecCaseStudies .Tech > span {
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(var(--black-rgb) / 0.3);
+  font-size: 15px;
+  color: var(--black);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media (max-width: 450px) {
+  .SecCaseStudies .Tech > span {
+    padding: 4px 15px;
+  }
+}
+.SecCaseStudies .Tech > span:hover {
+  background: rgb(var(--black-rgb) / 0.1);
+}
+.SecTechnology {
+  background: rgb(var(--black-rgb) / 0.8);
+  padding-bottom: 100px;
+  height: calc(100dvh - 60px);
+}
+.SecTechnology > div {
+  z-index: 1;
+  position: relative;
+}
+.SecTechnology .Text {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 3;
+}
+.SecTechnology .Text * {
+  color: var(--white);
+}
+.SecTechnology .Text p {
+  font-weight: 300;
+}
+.SecTechnology > canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: calc(100vw - 137px) !important;
+  height: 100% !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.SecBlog .BlogItem {
+  gap: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .SecBlog .BlogItem {
+    display: grid;
+    grid-row-gap: 9px;
+    grid-column-gap: 9px;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-flex-line-pack: start;
+    align-content: start;
+    place-items: stretch stretch;
+  }
+}
+@media (min-width: 992px) {
+  .SecBlog .BlogItem {
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+}
+.SecBlog .BlogItem .BlogBlock {
+  border-radius: 9px;
+  overflow: hidden;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-shadow: 0 0 8px rgb(var(--black-rgb) / 0.1);
+  box-shadow: 0 0 8px rgb(var(--black-rgb) / 0.1);
+}
+@media (max-width: 767px) {
+  .SecBlog .BlogItem .BlogBlock {
+    width: calc(50% - 6px);
+  }
+}
+@media (max-width: 767px) and (max-width: 420px) {
+  .SecBlog .BlogItem .BlogBlock {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .SecBlog .BlogItem .BlogBlock {
+    padding: 8px;
+  }
+}
+.SecBlog .BlogItem .BlogBlock img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 6px;
+}
+.SecBlog .BlogItem .BlogBlock .DateCat {
+  padding: 0 9px;
+}
+@media (max-width: 991px) {
+  .SecBlog .BlogItem .BlogBlock .DateCat {
+    padding: 0 6px;
+  }
+}
+.SecBlog .BlogItem .BlogBlock .DateCat .Date {
+  font-size: 13px;
+}
+@media (max-width: 1200px) {
+  .SecBlog .BlogItem .BlogBlock .DateCat .Date {
+    font-size: 12px;
+  }
+}
+.SecBlog .BlogItem .BlogBlock .DateCat .Cat {
+  border-radius: 20px;
+  padding: 3px 15px;
+  background: var(--white);
+  font-size: 13px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 175%;
+}
+@media (max-width: 1200px) {
+  .SecBlog .BlogItem .BlogBlock .DateCat .Cat {
+    font-size: 12px;
+    padding: 3px 9px;
+    line-height: 140%;
+  }
+}
+.SecBlog .BlogItem .BlogBlock .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 15px;
+}
+.SecBlog .BlogItem .BlogBlock h3 {
+  line-height: 120%;
+  font-size: 24px;
+  font-weight: 700 !important;
+  padding: 0 9px;
+  margin: 0;
+}
+@media (max-width: 1200px) {
+  .SecBlog .BlogItem .BlogBlock h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .SecBlog .BlogItem .BlogBlock h3 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    padding: 0 6px;
+  }
+}
+.SecBlog .BlogItem .BlogBlock:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  color: var(--black) !important;
+}
+.SecBlog .BlogItem .BlogBlock:nth-child(odd) {
+  background: rgb(var(--black-rgb) / 0.05);
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .SecBlog .BlogItem > *:nth-child(2n + 3) img {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .SecBlog .BlogItem > *:nth-child(2n + 3) h3 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .SecBlog .BlogItem > *:nth-child(2n + 3) h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .SecBlog .BlogItem > *:nth-child(6n + 6) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .SecBlog .BlogItem > *:nth-child(6n + 6) > * {
+    width: 45%;
+  }
+  .SecBlog .BlogItem > *:nth-child(6n + 6) .text {
+    width: 50%;
+  }
+  .SecBlog .BlogItem > *:nth-child(3n + 4) h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .SecBlog .BlogItem > *:nth-child(3n + 4) h3 {
+    font-size: 17px;
+  }
+}
+@media (min-width: 768px) {
+  .SecBlog .BlogItem > *:nth-child(1) {
+    grid-area: 1/1/6/4;
+  }
+  .SecBlog .BlogItem > *:nth-child(2) {
+    grid-area: 6/1/10/4;
+  }
+  .SecBlog .BlogItem > *:nth-child(3) {
+    grid-area: 1/4/2/9;
+  }
+  .SecBlog .BlogItem > *:nth-child(4) {
+    grid-area: 2/4/7/7;
+  }
+  .SecBlog .BlogItem > *:nth-child(5) {
+    grid-area: 2/7/5/9;
+  }
+  .SecBlog .BlogItem > *:nth-child(6) {
+    grid-area: 8/4/11/8;
+  }
+  .SecBlog .BlogItem > *:nth-child(7) {
+    grid-area: 11/4/12/8;
+  }
+  .SecBlog .BlogItem > *:nth-child(8) {
+    grid-area: 1/9/5/12;
+  }
+  .SecBlog .BlogItem > *:nth-child(9) {
+    grid-area: 12/1/10/4;
+  }
+  .SecBlog .BlogItem > *:nth-child(10) {
+    grid-area: 12/8/7/12;
+  }
+  .SecBlog .BlogItem > *:nth-child(11) {
+    grid-area: 8/4/7/8;
+  }
+  .SecBlog .BlogItem > *:nth-child(12) {
+    grid-area: 7/7/5/12;
+  }
+}
+.SecTesti .Testimonials {
+  gap: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  .SecTesti .Testimonials {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-flex-line-pack: start;
+    align-content: start;
+    place-items: stretch stretch;
+  }
+}
+.SecTesti .Testimonials > * {
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 9px rgb(var(--black-rgb) / 0.15);
+  box-shadow: 0 0 9px rgb(var(--black-rgb) / 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 12px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.SecTesti .Testimonials > *,
+.SecTesti .Testimonials > * * {
+  color: var(--black);
+}
+@media (max-width: 991px) {
+  .SecTesti .Testimonials > * {
+    width: calc(33.333% - 8px);
+  }
+}
+@media (max-width: 575px) {
+  .SecTesti .Testimonials > * {
+    width: calc(50% - 6px);
+  }
+}
+.SecTesti .Testimonials > * .logoImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.SecTesti .Testimonials > * .logoImg img {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-left: -15px;
+  border: 2px solid var(--white);
+}
+.SecTesti .Testimonials > * .logoImg img.first {
+  margin-left: 0;
+}
+@media (max-width: 1200px) {
+  .SecTesti .Testimonials > * .star.h3 {
+    font-size: 22px;
+  }
+}
+.SecTesti .Testimonials > * .star:after {
+  color: #ffc918;
+}
+.SecTesti .Testimonials > * > small {
+  font-size: 14px;
+  text-align: center;
+}
+.SecTesti .Testimonials > *:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-box-shadow: 0 0 15px rgb(var(--black-rgb) / 0.2);
+  box-shadow: 0 0 15px rgb(var(--black-rgb) / 0.2);
+}
+@media (max-width: 991px) {
+  .SecTesti .Testimonials > * .h5 {
+    font-size: 1rem;
+  }
+}
+.SecTesti .Testimonials .trustpilot,
+.SecTesti .Testimonials .Google {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.SecTesti .Testimonials .trustpilot img,
+.SecTesti .Testimonials .Google img {
+  height: auto;
+  width: 90%;
+  max-height: 50px;
+}
+.SecTesti .Testimonials .Google {
+  font-size: 15px;
+}
+.SecTesti .Testimonials .clutch,
+.SecTesti .Testimonials .ambitionbox,
+.SecTesti .Testimonials .goodfirms,
+.SecTesti .Testimonials .Reputedfirms,
+.SecTesti .Testimonials .Designrush {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 0.5rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.SecTesti .Testimonials .clutch svg,
+.SecTesti .Testimonials .ambitionbox svg,
+.SecTesti .Testimonials .goodfirms svg,
+.SecTesti .Testimonials .Reputedfirms svg,
+.SecTesti .Testimonials .Designrush svg {
+  min-width: 66px;
+  height: 66px;
+}
+.SecTesti .Testimonials .clutch .star:after,
+.SecTesti .Testimonials .ambitionbox .star:after,
+.SecTesti .Testimonials .goodfirms .star:after,
+.SecTesti .Testimonials .Reputedfirms .star:after,
+.SecTesti .Testimonials .Designrush .star:after {
+  color: #3c59f3;
+}
+.SecTesti .Testimonials .clutch svg,
+.SecTesti .Testimonials .goodfirms svg,
+.SecTesti .Testimonials .Reputedfirms svg {
+  height: 48px;
+  min-width: 48px;
+}
+.SecTesti .Testimonials .clutch .star:after,
+.SecTesti .Testimonials .goodfirms .star:after,
+.SecTesti .Testimonials .Reputedfirms .star:after {
+  color: #ec473a;
+}
+.SecTesti .Testimonials .Reputedfirms .star:after {
+  color: #e9465d;
+}
+.SecTesti .Testimonials .Designrush .star:after {
+  color: #2ad2ff;
+}
+.SecTesti .Testimonials .goodfirms .Star {
+  color: #1b66f3;
+}
+.SecTesti .Testimonials .goodfirms .rated > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+  counter-increment: rated-num;
+  font-size: 13px;
+}
+.SecTesti .Testimonials .goodfirms .rated > span .bar {
+  width: 98px;
+  height: 4px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--black)),
+    to(#1b66f3)
+  );
+  background: linear-gradient(90deg, var(--black), #1b66f3);
+  display: block;
+}
+@media (max-width: 575px) {
+  .SecTesti .Testimonials .goodfirms .rated > span .bar {
+    width: 80px;
+  }
+}
+.SecTesti .Testimonials .goodfirms .rated > span:before {
+  content: counter(rated-num);
+  width: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.SecTesti .Testimonials .Indi {
+  padding: 0;
+  overflow: hidden;
+  gap: 1px;
+}
+@media (max-width: 991px) {
+  .SecTesti .Testimonials .Indi {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: calc(50% - 6px);
+  }
+}
+@media (max-width: 575px) {
+  .SecTesti .Testimonials .Indi {
+    width: 100%;
+  }
+}
+.SecTesti .Testimonials .Indi > * {
+  padding: 1em 1em 0.2em;
+  display: block;
+}
+.SecTesti .Testimonials .Indi > small {
+  padding: 0 1.5em 1em;
+}
+@media (max-width: 1400px) {
+  .SecTesti .Testimonials .Indi > small {
+    font-size: 13px;
+    line-height: 130%;
+  }
+}
+.SecTesti .Testimonials .Indi .user {
+  background: var(--black);
+  width: 100%;
+  color: var(--white) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  padding: 0.6em 1em;
+}
+.SecTesti .Testimonials .Indi .user img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  border: 2px solid var(--white);
+}
+.SecTesti .Testimonials .Indi .user strong {
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 6px;
+  width: calc(100% - 60px);
+  line-height: 1;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: var(--white) !important;
+}
+.SecTesti .Testimonials .Indi .user strong small {
+  font-weight: 300;
+  font-size: 12px;
+  color: var(--white) !important;
+}
+.SecTesti .Testimonials .Indi.bgthm {
+  background: var(--black) !important;
+}
+.SecTesti .Testimonials .Indi.bgthm * {
+  color: var(--white) !important;
+}
+.SecTesti .Testimonials > *:nth-child(1) {
+  grid-area: 1/1/4/3;
+}
+.SecTesti .Testimonials > *:nth-child(2) {
+  grid-area: 2/3/8/6;
+}
+.SecTesti .Testimonials > *:nth-child(3) {
+  grid-area: 9/9/11/11;
+}
+.SecTesti .Testimonials > *:nth-child(4) {
+  grid-area: 3/8/7/11;
+}
+.SecTesti .Testimonials > *:nth-child(5) {
+  grid-area: 6/6/4/8;
+}
+.SecTesti .Testimonials > *:nth-child(6) {
+  grid-area: 7/6/12/9;
+}
+.SecTesti .Testimonials > *:nth-child(7) {
+  grid-area: 1/8/3/10;
+}
+.SecTesti .Testimonials > *:nth-child(8) {
+  grid-area: 8/2/10/4;
+}
+.SecTesti .Testimonials > *:nth-child(9) {
+  grid-area: 9/4/11/6;
+}
+.SecTesti .Testimonials > *:nth-child(10) {
+  grid-area: 5/1/7/3;
+}
+.SecTesti .Testi {
+  max-width: 800px;
+  margin: 0 auto;
+  height: calc(100dvh - 250px);
+}
+.SecTesti .bgimg {
+  z-index: 0;
+  mix-blend-mode: multiply;
+}
+.SecTesti > div {
+  z-index: 1;
+  position: relative;
+}
+.SecTesti .swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.SecTesti .swiper-pagination {
+  position: static;
+  -webkit-transform: translateX(0%) !important;
+  transform: translateX(0%) !important;
+}
+.SecTesti .card {
+  border-radius: 0;
+  border: none;
+  border-radius: 15px;
+  padding: 2em;
+  gap: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  .SecTesti .card {
+    padding: 3em;
+  }
+}
+.SecTesti .card > * {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.SecTesti .card-body {
+  font-size: 16px;
+  line-height: 150%;
+}
+.SecTesti .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+  margin: 0 auto;
+}
+.SecTesti .card-footer img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.SecTesti .card-footer .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 9px;
+  width: calc(auto - 70px);
+  line-height: 1;
+}
+.SecTesti .card-footer .name small {
+  color: rgb(var(--black-rgb) / 0.5);
+  font-weight: 600;
+  font-size: 13px;
+} /*# sourceMappingURL=index.min.css.map */

@@ -2852,7 +2852,7 @@ footer > div .OtherLinks {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: rgb(var(--black-rgb) / 0.3);
+  /* color: rgb(var(--black-rgb) / 0.3); */
 }
 footer ul.links {
   margin: 0;

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get A Quote</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .card {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center mt-5">
+      <div class="card p-4 shadow">
+        <h3 style="text-align: center; font-weight: 700; color: #0f828c">
+          Get A Quote
+        </h3>
+        <form id="quoteForm">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Name"
+              name="fullName"
+              required
+            />
+          </div>
+
+          <div class="mb-2">
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter Your Email"
+              name="email"
+              required
+            />
+            <p
+              id="emailError"
+              class="text-danger mb-2"
+              style="font-size: 0.9rem; display: none"
+            ></p>
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="tel"
+              id="mobile"
+              class="form-control"
+              placeholder="Enter your mobile number"
+              name="mobile"
+              required
+            />
+            <p
+              id="mobileError"
+              class="text-danger mb-2"
+              style="font-size: 0.9rem; display: none"
+            ></p>
+          </div>
+
+          <div id="otpSection" style="display: none">
+            <div class="mb-3">
+              <input
+                type="text"
+                id="otpInput"
+                class="form-control"
+                placeholder="Enter OTP"
+                name="otp"
+                required
+              />
+            </div>
+            <button
+              type="button"
+              id="verifyOtpBtn"
+              class="btn w-100"
+              style="background-color: #0f828c; color: white"
+            >
+              Verify OTP
+            </button>
+          </div>
+
+          <div id="sendOtpSection" class="mb-3">
+            <button
+              type="button"
+              id="sendOtpBtn"
+              class="btn w-100"
+              style="background-color: #0f828c; color: white"
+            >
+              Send OTP
+            </button>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <select class="form-select" name="solution">
+              <option value="">Payout Solution</option>
+              <option value="solution1">Solution 1</option>
+              <option value="solution2">Solution 2</option>
+              <option value="solution3">Solution 3</option>
+            </select>
+          </div>
+
+          <button
+            type="submit"
+            class="btn w-100"
+            style="background-color: #0f828c; color: white"
+          >
+            REQUEST A QUOTE →
+          </button>
+        </form>
+
+        <p id="message" class="text-center mt-3"></p>
+      </div>
+    </div>
+
+    <script>
+      const trustedDomains = [
+        "gmail.com",
+        "yahoo.com",
+        "outlook.com",
+        "hotmail.com",
+        "icloud.com",
+      ];
+      let generatedOtp = "";
+
+      function isValidEmail(email) {
+        const emailParts = email.split("@");
+        if (emailParts.length !== 2) return false;
+        return trustedDomains.includes(emailParts[1].toLowerCase());
+      }
+
+      function validateMobile(mobile) {
+        const digitsOnly = mobile.replace(/\D/g, "");
+        return digitsOnly.length >= 10 && digitsOnly.length <= 13;
+      }
+
+      document.getElementById("sendOtpBtn").addEventListener("click", () => {
+        const email = document.getElementById("email").value;
+        const mobile = document.getElementById("mobile").value;
+        let valid = true;
+
+        if (!isValidEmail(email)) {
+          document.getElementById("emailError").innerText =
+            "Please use a valid email like gmail, yahoo, outlook.";
+          document.getElementById("emailError").style.display = "block";
+          valid = false;
+        } else {
+          document.getElementById("emailError").style.display = "none";
+        }
+
+        if (!validateMobile(mobile)) {
+          document.getElementById("mobileError").innerText =
+            "Please enter a valid mobile number.";
+          document.getElementById("mobileError").style.display = "block";
+          valid = false;
+        } else {
+          document.getElementById("mobileError").style.display = "none";
+        }
+
+        if (!valid) return;
+
+        generatedOtp = Math.floor(100000 + Math.random() * 900000).toString();
+        alert("Your OTP is " + generatedOtp);
+        document.getElementById("otpSection").style.display = "block";
+        document.getElementById("sendOtpSection").style.display = "none";
+      });
+
+      document.getElementById("verifyOtpBtn").addEventListener("click", () => {
+        const enteredOtp = document.getElementById("otpInput").value;
+        const message = document.getElementById("message");
+        if (enteredOtp === generatedOtp) {
+          message.innerText = "✅ OTP Verified Successfully";
+          message.style.color = "green";
+        } else {
+          message.innerText = "❌ Invalid OTP. Try Again";
+          message.style.color = "red";
+        }
+      });
+
+      document.getElementById("quoteForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Form submitted successfully!");
+      });
+    </script>
+  </body>
+</html>

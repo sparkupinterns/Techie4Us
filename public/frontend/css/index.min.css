@@ -4366,3 +4366,36 @@
   font-weight: 600;
   font-size: 13px;
 } /*# sourceMappingURL=index.min.css.map */
+
+input, textarea, select, option {
+    color: #000 !important; 
+    background-color: #fff !important; 
+    border-color: #0f828c;
+  }
+
+  /* Placeholder text style */
+  input::placeholder,
+  textarea::placeholder {
+    color: #888 !important; 
+  }
+
+  /* Focus styles */
+  input:focus, textarea:focus, select:focus {
+    color: #000 !important; 
+    background-color: red !important;
+    /* border: 1px #0f828c !important;  */
+    outline: none !important;
+    box-shadow: 0 0 4px rgba(15, 130, 140, 0.5);
+
+  }
+
+  /* Button style override */
+  button.btn {
+    background-color: #0f828c;
+    color: white;
+    border: none;
+    transition: background-color 0.2s ease;
+  }
+  button.btn:hover {
+    background-color: #0d6e73;
+  }
